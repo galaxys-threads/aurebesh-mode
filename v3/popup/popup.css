@@ -1,0 +1,15 @@
+select {
+    padding: 4px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+
+    select {
+        background: #222222;
+        color: white;
+    }
+}
