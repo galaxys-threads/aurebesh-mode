@@ -1,5 +1,6 @@
 const fonts = [
     'Site Default',
+    'Aurebesh Code',
     'Aurebesh AF Canon',
     'Aurebesh AF Canon Tech',
     'Aurebesh AF Legends',
@@ -27,7 +28,7 @@ function saveSettings() {
 
 function restoreSettings() {
     chrome.storage.sync.get({
-        fontFamily: 'Site Default',
+        fontFamily: fonts[0],
     }, function(savedSettings) {
         fontSelector.value = savedSettings.fontFamily
     });

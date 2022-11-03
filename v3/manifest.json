@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "version": "0.1",
+    "version": "0.2",
     "name": "Aurebesh Mode",
     "description": "View All Webpages In Aurebesh (Star Wars Alphabet Font)",
     "icons": {
@@ -27,6 +27,7 @@
     "web_accessible_resources": [
         {
             "resources": [
+                "media/fonts/AurebeshCode.otf",
                 "media/fonts/AurebeshAF-Canon.otf",
                 "media/fonts/AurebeshAF-CanonTech.otf",
                 "media/fonts/AurebeshAF-Legends.otf",

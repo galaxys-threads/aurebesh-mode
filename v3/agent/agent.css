@@ -1,4 +1,11 @@
 @font-face {
+    font-family: 'Aurebesh Code';
+    font-style: normal;
+    font-weight: 700;
+    src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshCode.otf');
+}
+
+@font-face {
     font-family: 'Aurebesh AF Canon';
     font-style: normal;
     font-weight: 700;
