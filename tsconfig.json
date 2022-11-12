@@ -1,0 +1,9 @@
+{
+	"include": ["v3"],
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"lib": ["DOM", "es2017"],
+		"types": ["chrome"],
+		"jsx": "react-jsx"
+	}
+}

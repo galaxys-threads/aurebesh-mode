@@ -18,7 +18,7 @@
     "content_scripts": [
         {
             "css": ["agent/agent.css"],
-            "js": ["agent/agent.js"],
+            "js": ["agent/agent.ts"],
             "matches": [
                 "*://*/*"
             ]
