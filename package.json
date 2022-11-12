@@ -1,0 +1,22 @@
+{
+  "private": true,
+  "scripts": {
+    "watch": "parcel watch",
+    "lint": "echo 0",
+    "fix": "echo 0",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "targets": {
+    "v3": {
+      "source": "v3/manifest.json",
+      "distDir": "var/v3"
+    }
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.8.0",
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "@kyberbits/prism": "^1.0.2"
+  }
+}

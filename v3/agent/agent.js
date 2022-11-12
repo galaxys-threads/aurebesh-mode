@@ -1,9 +1,11 @@
+import {fonts} from "../fonts"
+
 const styleSheet = document.createElement("style")
 document.head.appendChild(styleSheet)
 
 function changeFontFamily(fontFamily) {
     let styles = ""
-    if (fontFamily !== "Site Default") {
+    if (fontFamily !== fonts[0]) {
         styles = `
             * {
                 font-family: "${fontFamily}" !important;
@@ -15,7 +17,7 @@ function changeFontFamily(fontFamily) {
 }
 
 chrome.storage.sync.get({
-    fontFamily: 'Site Default',
+    fontFamily: fonts[0],
 }, function(savedSettings) {
     changeFontFamily(savedSettings.fontFamily)
 });

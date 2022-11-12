@@ -1,12 +1,7 @@
-const fonts = [
-    'Site Default',
-    'Aurebesh Code',
-    'Aurebesh AF Canon',
-    'Aurebesh AF Canon Tech',
-    'Aurebesh AF Legends',
-    'Aurebesh AF Legends Tech',
-    'Aurebesh Red',
-];
+import "@kyberbits/prism"
+import "../agent/agent.css"
+import "./popup.css"
+import {fonts} from "../fonts"
 
 const fontSelector = document.querySelector("#font-selector")
 
