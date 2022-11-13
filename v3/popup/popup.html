@@ -6,9 +6,29 @@
 		<h2>Aurebesh Mode</h2>
 		<h1>Aurebesh Mode</h1>
 		<br />
-		<label> <input type="checkbox" id="activated" /> Activated </label>
+		<label><input type="checkbox" id="activated" /> Enabled</label>
 		<br />
-		<select id="font-selector"></select>
+		<label>
+			<strong>Font:</strong>
+			<select id="font-selector"></select>
+		</label>
+		<br />
+		<table>
+			<thead>
+				<tr>
+					<th>
+						Selected Domains
+						<label style="float: right">
+							<input type="checkbox" id="onlySelectedDomains" />
+							Only Apply To Selected Domains
+						</label>
+					</th>
+				</tr>
+			</thead>
+			<tbody id="selected-domains"></tbody>
+		</table>
+		<br />
+		<button id="add-current-domain">Add Current Domain</button>
 		<br />
 		<br />
 		<p>

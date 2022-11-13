@@ -1,19 +1,27 @@
 body {
-    min-width: 320px;
-    padding: 2rem;
-    text-align: center;
-    border: var(--border);
+	min-width: 512px;
+	padding: 2rem;
+	text-align: center;
 }
 
 h2 {
-    font-size: 0.75em;
-    font-family: "Aurebesh AF Canon";
-    text-transform: uppercase;
-    opacity: 0.5;
+	font-size: 1rem;
+	font-family: 'Aurebesh AF Canon';
+	text-transform: uppercase;
+	opacity: 0.5;
+	margin-bottom: 0;
 }
 
 h1 {
-    opacity: 1;
-    font-size: 1.5em;
-    text-transform: uppercase;
+	opacity: 1;
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+table {
+	width: 100%;
+}
+
+table td button {
+	margin-right: 1rem;
 }

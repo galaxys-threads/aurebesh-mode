@@ -2,6 +2,8 @@ import browser from '../lib/browser'
 
 export interface DatabankSettings {
 	Activated: boolean
+	OnlySelectedDomains: boolean
+	SelectedDomains: string[]
 	FontFamily: string
 }
 
@@ -17,6 +19,8 @@ export const DatabankFonts = [
 export function DatabankDefaults(): DatabankSettings {
 	var defaults: DatabankSettings = {
 		Activated: false,
+		OnlySelectedDomains: false,
+		SelectedDomains: [],
 		FontFamily: DatabankFonts[0],
 	}
 	return defaults
@@ -24,7 +28,7 @@ export function DatabankDefaults(): DatabankSettings {
 
 export function DatabankSaveSettings(
 	settings: DatabankSettings,
-	callback: CallableFunction,
+	callback?: CallableFunction,
 ): void {
 	browser.storage.sync.set(settings, () => {
 		callback()
