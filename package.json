@@ -9,7 +9,9 @@
 	},
 	"targets": {
 		"v3": {
-			"source": "v3/manifest.json",
+			"source": [
+				"v3/manifest.json"
+			],
 			"distDir": "var/v3"
 		}
 	},
