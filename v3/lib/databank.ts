@@ -16,12 +16,14 @@ export const DatabankFonts = [
 	'Aurebesh Code',
 ]
 
+const DefaultFont = DatabankFonts[0]
+
 export function DatabankDefaults(): DatabankSettings {
 	var defaults: DatabankSettings = {
 		Activated: false,
 		OnlySelectedDomains: false,
 		SelectedDomains: [],
-		FontFamily: DatabankFonts[0],
+		FontFamily: DefaultFont,
 	}
 	return defaults
 }

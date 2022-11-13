@@ -1,7 +1,3 @@
 {
-    "gitignore": [
-        "*.crx",
-        "*.pem",
-        "*.zip"
-    ]
+	"gitignore": ["*.crx", "*.pem", "*.zip"]
 }

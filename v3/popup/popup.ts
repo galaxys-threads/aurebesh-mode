@@ -58,17 +58,12 @@ function saveSettings() {
 		selectedDomains.push(item.getAttribute('data-host'))
 	})
 
-	DatabankSaveSettings(
-		{
-			Activated: activatedSelector.checked,
-			FontFamily: fontSelector.value,
-			OnlySelectedDomains: onlySelectedDomainsCheckbox.checked,
-			SelectedDomains: selectedDomains,
-		},
-		() => {
-			// alert("Options where saved")
-		},
-	)
+	DatabankSaveSettings({
+		Activated: activatedSelector.checked,
+		FontFamily: fontSelector.value,
+		OnlySelectedDomains: onlySelectedDomainsCheckbox.checked,
+		SelectedDomains: selectedDomains,
+	})
 }
 
 function restoreSettings() {
