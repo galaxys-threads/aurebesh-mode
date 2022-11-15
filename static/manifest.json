@@ -11,12 +11,12 @@
 	},
 	"permissions": ["tabs", "storage"],
 	"action": {
-		"default_popup": "popup/index.html"
+		"default_popup": "popup.html"
 	},
 	"content_scripts": [
 		{
-			"css": ["agent/agent.css"],
-			"js": ["agent/agent.ts"],
+			"css": ["agent.css"],
+			"js": ["agent.js"],
 			"matches": ["*://*/*"]
 		}
 	],

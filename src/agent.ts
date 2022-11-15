@@ -1,5 +1,5 @@
-import browser from '../lib/browser'
-import { DatabankGetSettings, DatabankSettings } from '../lib/databank'
+import browser from './lib/browser'
+import { DatabankGetSettings, DatabankSettings } from './lib/databank'
 
 // Add the stylesheet to the document so we can change it later
 const styleSheet = document.createElement('style')

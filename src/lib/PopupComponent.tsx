@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import browser from '../lib/browser'
-import { DatabankFonts, DatabankSettings } from '../lib/databank'
+import browser from './browser'
+import { DatabankFonts, DatabankSettings } from './databank'
 type SettingsSetter = (settings: DatabankSettings) => void
 
 interface Props {
