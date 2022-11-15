@@ -1,9 +1,11 @@
 {
-	"include": ["v3"],
+	"include": ["v3/**/*"],
 	"compilerOptions": {
-		"esModuleInterop": true,
+		"isolatedModules": true,
+		"strict": true,
 		"lib": ["DOM", "es2017"],
 		"types": ["chrome"],
+		"target": "es2017",
 		"jsx": "react-jsx"
 	}
 }
