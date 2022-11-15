@@ -4,6 +4,10 @@ body {
 	text-align: center;
 }
 
+label {
+	user-select: none;
+}
+
 h2 {
 	font-size: 1rem;
 	font-family: 'Aurebesh AF Canon';
