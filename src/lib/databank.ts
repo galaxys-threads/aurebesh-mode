@@ -32,8 +32,7 @@ export function DatabankSaveSettings(
 	settings: DatabankSettings,
 	callback?: CallableFunction,
 ): void {
-	console.log(settings)
-	browser.storage.sync.set(settings, () => {
+	browser.storage.local.set(settings, () => {
 		if (callback) {
 			callback()
 		}
@@ -42,9 +41,12 @@ export function DatabankSaveSettings(
 
 type GetFunc = (savedSettings: DatabankSettings) => void
 export function DatabankGetSettings(callback: GetFunc): void {
-	browser.storage.sync.get(
+	browser.storage.local.get(
 		DatabankDefaults(),
-		function (savedSettings: DatabankSettings) {
+		function (savedSettings: DatabankSettings | undefined) {
+			if (!savedSettings) {
+				savedSettings = DatabankDefaults()
+			}
 			callback(savedSettings)
 		},
 	)

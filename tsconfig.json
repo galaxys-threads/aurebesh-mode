@@ -1,11 +1,12 @@
 {
-	"include": ["v3/**/*"],
+	"include": ["src/**/*"],
 	"compilerOptions": {
 		"isolatedModules": true,
 		"strict": true,
-		"lib": ["DOM", "es2017"],
+		"moduleResolution": "node",
+		"lib": ["DOM", "es2021"],
 		"types": ["chrome"],
-		"target": "es2017",
+		"target": "es2021",
 		"jsx": "react-jsx"
 	}
 }

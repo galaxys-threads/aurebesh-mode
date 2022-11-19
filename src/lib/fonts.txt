@@ -2,40 +2,40 @@
 	font-family: 'Aurebesh Code';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshCode.otf');
+	src: url('media/fonts/AurebeshCode.otf');
 }
 
 @font-face {
 	font-family: 'Aurebesh AF Canon';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshAF-Canon.otf');
+	src: url('media/fonts/AurebeshAF-Canon.otf');
 }
 
 @font-face {
 	font-family: 'Aurebesh AF Canon Tech';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshAF-CanonTech.otf');
+	src: url('media/fonts/AurebeshAF-CanonTech.otf');
 }
 
 @font-face {
 	font-family: 'Aurebesh AF Legends';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshAF-Legends.otf');
+	src: url('media/fonts/AurebeshAF-Legends.otf');
 }
 
 @font-face {
 	font-family: 'Aurebesh AF Legends Tech';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshAF-LegendsTech.otf');
+	src: url('media/fonts/AurebeshAF-LegendsTech.otf');
 }
 
 @font-face {
 	font-family: 'Aurebesh Red';
 	font-style: normal;
 	font-weight: 700;
-	src: url('chrome-extension://__MSG_@@extension_id__/media/fonts/AurebeshRed-Regular.otf');
+	src: url('media/fonts/AurebeshRed-Regular.otf');
 }

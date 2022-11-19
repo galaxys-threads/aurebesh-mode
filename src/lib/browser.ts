@@ -1,5 +1,5 @@
 function getBrowserInstance(): typeof chrome {
-	const browserInstance = window.chrome || (window as any)['browser']
+	const browserInstance = chrome || (browser as any)
 	return browserInstance
 }
 

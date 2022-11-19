@@ -27,7 +27,7 @@ export default function App(props: Props) {
 		})
 	})
 
-	const fontOptions = []
+	const fontOptions = [] as JSX.Element[]
 	DatabankFonts.forEach((font) => {
 		fontOptions.push(
 			<option key={font} value={font} selected={font === fontFamily}>
@@ -38,7 +38,7 @@ export default function App(props: Props) {
 
 	let selectedDomainsSection = <></>
 	if (onlySelectedDomains) {
-		let selectedDomainRows = []
+		let selectedDomainRows = [] as JSX.Element[]
 		selectedDomains.forEach((host) => {
 			selectedDomainRows.push(
 				<tr>
@@ -135,7 +135,7 @@ export default function App(props: Props) {
 				</label>
 				{selectedDomainsSection}
 				<p id="branding">
-					<strong>Made By: </strong>{' '}
+					<strong>Made By:</strong>{' '}
 					<a href="https://galaxysthreads.com/" target="_blank">
 						Galaxy's Threads
 					</a>

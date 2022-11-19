@@ -1,5 +1,8 @@
 import browser from './lib/browser'
 import { DatabankGetSettings, DatabankSettings } from './lib/databank'
+import { embedFonts } from './lib/fonts'
+
+embedFonts()
 
 // Add the stylesheet to the document so we can change it later
 const styleSheet = document.createElement('style')
@@ -34,10 +37,6 @@ function changeFontFamily(settings: DatabankSettings) {
 }
 
 browser.storage.onChanged.addListener((changes, area) => {
-	if (area !== 'sync') {
-		return
-	}
-
 	DatabankGetSettings(changeFontFamily)
 })
 
