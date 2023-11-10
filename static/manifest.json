@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"version": "0.4",
+	"version": "0.5",
 	"name": "Aurebesh Mode",
 	"description": "View All Webpages In Aurebesh (Star Wars Alphabet Font)",
 	"icons": {
