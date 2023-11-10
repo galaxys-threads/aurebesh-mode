@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import browser from './browser'
 import { DatabankFonts, DatabankSettings } from './databank'
 type SettingsSetter = (settings: DatabankSettings) => void
@@ -54,17 +54,17 @@ export default function App(props: Props) {
 						>
 							Remove
 						</button>
-						{host}
 					</td>
+					<td>{host}</td>
 				</tr>,
 			)
 		})
 		selectedDomainsSection = (
-			<fieldset>
+			<>
 				<table>
 					<thead>
 						<tr>
-							<th>Selected Sites</th>
+							<th colSpan={2}>Selected Sites</th>
 						</tr>
 					</thead>
 					<tbody>{selectedDomainRows}</tbody>
@@ -85,62 +85,63 @@ export default function App(props: Props) {
 				>
 					Add Current Site
 				</button>
-			</fieldset>
+			</>
 		)
 	}
 
 	return (
-		<div>
-			<h2>Aurebesh Mode</h2>
-			<h1>Aurebesh Mode</h1>
-			<div id="page-elements">
-				<label>
-					<input
-						onChange={() => setActivated(!activated)}
-						checked={activated}
-						type="checkbox"
-					/>
-					Enabled
-				</label>
-				<label>
-					Font:{' '}
-					<select
-						onChange={(e) => {
-							setFontFamily(e.target.value)
-						}}
-					>
-						{fontOptions}
-					</select>
-				</label>
+		<main>
+			<h1>
+				<span className="aurebesh">Aurebesh Mode</span>
+				Aurebesh Mode
+			</h1>
 
-				<label>
-					<input
-						type="radio"
-						onClick={() => {
-							setOnlySelectedDomains(false)
-						}}
-						checked={!onlySelectedDomains}
-					/>
-					Apply to All Sites
-				</label>
-				<label>
-					<input
-						type="radio"
-						onClick={() => {
-							setOnlySelectedDomains(true)
-						}}
-						checked={onlySelectedDomains}
-					/>
-					Only Apply To Selected Sites
-				</label>
-				{selectedDomainsSection}
-				<p id="branding">
-					<strong>Made By:</strong>{' '}
-					<a href="https://galaxysthreads.com/" target="_blank">
-						Galaxy's Threads
-					</a>
-				</p>
-			</div>
-		</div>
+			<label>
+				<input
+					onChange={() => setActivated(!activated)}
+					checked={activated}
+					type="checkbox"
+				/>
+				Enabled
+			</label>
+			<label>
+				Font:{' '}
+				<select
+					onChange={(e) => {
+						setFontFamily(e.target.value)
+					}}
+				>
+					{fontOptions}
+				</select>
+			</label>
+
+			<label>
+				<input
+					type="radio"
+					onClick={() => {
+						setOnlySelectedDomains(false)
+					}}
+					checked={!onlySelectedDomains}
+				/>
+				Apply to All Sites
+			</label>
+			<label>
+				<input
+					type="radio"
+					onClick={() => {
+						setOnlySelectedDomains(true)
+					}}
+					checked={onlySelectedDomains}
+				/>
+				Only Apply To Selected Sites
+			</label>
+			{selectedDomainsSection}
+			<p id="branding">
+				<strong>Made By:</strong>{' '}
+				<a href="https://galaxysthreads.com/" target="_blank">
+					Galaxy's Threads
+				</a>
+			</p>
+		</main>
 	)
 }

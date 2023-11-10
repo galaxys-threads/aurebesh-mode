@@ -1,5 +1,4 @@
-import React from 'react'
-import '@kyberbits/prism'
+import '@aaronellington/reset-css'
 import './popup.css'
 import { createRoot } from 'react-dom/client'
 import { DatabankGetSettings, DatabankSaveSettings } from './lib/databank'

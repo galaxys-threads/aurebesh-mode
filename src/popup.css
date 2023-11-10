@@ -1,49 +1,46 @@
+:root {
+	--reset-css-font-size: 10pt;
+	--reset-css-space: 1.5rem;
+}
+
+html,
 body {
-	min-width: 512px;
-	padding: 2rem;
+	background-color: var(--reset-css-background-secondary);
+}
+
+body {
+	min-width: 32rem;
+	padding: var(--reset-css-space);
+}
+
+main {
+	display: flex;
 	text-align: center;
-}
-
-label {
-	user-select: none;
-}
-
-h2 {
-	font-size: 1rem;
-	font-family: 'Aurebesh AF Canon';
-	text-transform: uppercase;
-	opacity: 0.5;
-	margin-bottom: 0;
+	align-items: stretch;
 }
 
 h1 {
-	opacity: 1;
-	font-size: 2rem;
 	text-transform: uppercase;
+}
+
+.aurebesh {
+	font-family: 'Aurebesh AF Canon';
+	text-transform: uppercase;
+	opacity: 0.5;
+	font-size: 0.5em;
+	margin-bottom: -0.5em;
+	display: block;
 }
 
 table {
 	width: 100%;
-	margin-bottom: 1rem;
 }
 
-#page-elements > *:not(:last-child) {
-	margin-bottom: 1rem;
+tbody td:nth-child(2) {
+	width: 100%;
 }
 
-table td button,
-input[type='radio'],
-input[type='checkbox'] {
-	margin-right: 0.66rem;
-}
-
-#branding strong {
-	display: inline-block;
-}
-
-#branding img {
-	max-width: 64px;
-	border-radius: 0;
-	vertical-align: middle;
-	margin-left: 1rem;
+main label select {
+	display: inline;
+	width: auto;
 }
